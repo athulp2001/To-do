@@ -1,0 +1,90 @@
+body{
+    width: 100%;
+}
+.main-div{
+    border: solid;
+    border-radius: 25px;
+    background-color: rgb(202, 191, 171);
+    width: 360px;
+    padding: auto;
+    margin: auto;
+    margin-top: 50px;
+    height: 500px;
+}
+.to-do-list{
+    padding-top: 40px;
+   text-align: center;
+   font-family: arial;
+}
+.list-text{
+   
+    margin-left: 7%;
+    border: solid;
+
+    border-radius: 30px;
+    height: 40px;
+    width: 70%;
+
+}
+.Btn-Add{
+    background-color: rgb(255, 141, 1);
+    border-radius: 30px;
+    margin-left: -55px;
+    height: 46px;
+    width: 100px;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 17px;
+    user-select: none;
+    position: relative;
+
+}
+ul li::before{
+   
+ content: '';
+    width: 18px;
+    height: 18px;
+   
+    background-image: url(clipart-circle-black-and-white-6.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 6px;
+}
+
+
+/*list-added*/
+
+
+ul li.cheked{
+
+    color: grey;
+}
+
+ul li.cheked::before{
+    background-image:url(orange-check-tick-icon-14.png);
+}
+
+/*remove*/
+ul li span{
+    margin-right: 30px;
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+   
+  text-align: center;
+
+}
+ul li span:hover{
+    background-color:rgb(208, 208, 208);
+    border-radius: 50%;
+    
+}
+   
